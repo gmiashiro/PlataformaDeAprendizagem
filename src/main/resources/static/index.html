@@ -3,15 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Projeto</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/landingPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Avante</title>
 </head>
 <body>
-<h1>Bem-vindo</h1>
-<p>Esta é a página principal.</p>
+    <header>
+        <div>
+            <span class="header-logo logo gradientFont">Avante</span>
+        </div>
+        <div class="header-links-container">
+            <a href="">Sobre nós</a>
+            <div class="header-buttons-container">
+                <button class="header-button-full fullColorLP">Cadastrar</button>
+                <button class="header-button-gradientBorder gradientBorderLP">Entrar</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Inicio -->
+        <div class="main-box1">
+            <div class="main-box1-text">
+                <h1>Ajude seus alunos a aprender do jeito mais fácil: <span class="gradientFont">Se divertindo</span></h1>
+                <p>Uma ferramenta que permite o uso de jogos educativos em sala de aula com apenas um computador</p>
+            </div>
+            <div class="main-box1-button-container">
+                <button class="main-box1-button-full fullColorLP">Começar agora</button>
+                <button class="gradientBorderLP">Já tenho conta</button>
+            </div>
+        </div>
+        <!-- Porque usar -->
+        <div class="main-box2">
+            <div>
+                <h2>Por que usar o Avante?</h2>
+            </div>
+            <div class="slider-container" id="slider-container">
+                <div class="slider-arrows">
+                    <div>
+                        <button class="left-arrow" onclick="slideLeft()"><img src="./assets/icons/mainBox2Cards/setaIconesquerda.svg" alt=""></button>
+                    </div>
+                    <div>
+                        <button class="right-arrow" onclick="slideRight()"><img src="./assets/icons/mainBox2Cards/setaIcondireita.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Jogos disponíveis -->
+        <div class="main-box3">
+            <div>
+                <h2>Uma variedade de tipos de jogos disponíveis!</h2>
+            </div>
+            <div class="cards-container">
+                <div class="cards-row">
+                    <div class="slider-card gamesCard">
+                        <div>
+                            <img src="./assets/icons/mainBox3Cards/gincanaIcon.svg" alt="">
+                        </div>
+                        <div class="slider-card-text">
+                            <p>Aprendendo com velocidade! ao invés de turnos, as perguntas são respondidas pela equipe mais rápida, estimulando a pensar sobre pressão.</p>
+                        </div>
+                    </div>
+                    <div class="slider-card gamesCard">
+                        <div>
+                            <img src="./assets/icons/mainBox3Cards/forcaIcon.svg" alt="">
+                        </div>
+                        <div class="slider-card-text">
+                            <p>Ideal para associar termos com conceitos de maneira rápida.</p>
+                        </div>
+                    </div>
+                    <div class="slider-card gamesCard">
+                        <div>
+                            <img src="./assets/icons/mainBox3Cards/versusIcon.svg" alt="">
+                        </div>
+                        <div class="slider-card-text">
+                            <p>Competição em turnos para saber qual equipe consegue mais pontos, com algumas surpresas no meio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-row">
+                    <div class="slider-card gamesCard">
+                        <div>
+                            <img src="./assets/icons/mainBox3Cards/memoriaIcon.svg" alt="">
+                        </div>
+                        <div class="slider-card-text">
+                            <p>Ideal para recapitular livros, onde as equipes tentam acertar qual o próximo evento da história em turnos.</p>
+                        </div>
+                    </div>
+                    <div class="slider-card gamesCard">
+                        <div>
+                            <img src="./assets/icons/mainBox3Cards/detetiveIcon.svg" alt="">
+                        </div>
+                        <div class="slider-card-text">
+                            <p>Adivinhando os conceitos através de pistas aleatórias ao longo do jogo.</p>
+                        </div>
+                    </div>
+                    <div class="slider-card gamesCard">
+                        <div>
+                            <img src="./assets/icons/mainBox3Cards/poderesIcon.svg" alt="">
+                        </div>
+                        <div class="slider-card-text">
+                            <p>Estilo gincana, porém as equipes podem gastar seus pontos com poderes que os ajudam durante o jogo, ensinando a gerenciar seus recursos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 
-<button id="meuBotao">Clique aqui!</button>
+        <div class="main-box4">
+            <div>
+                <span class="logo gradientFont">Avante</span>
+                <h2>Pronto para ensinar com diversão?</h2>
+            </div>
+            <div class="main-box4-buttons">
+                <button class="fullColorLP">Começar agora</button>
+                <button class="gradientBorderLP">Já tenho conta</button>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
 
-<script src="./js/main.js"></script>
+    </footer>
+    <script src="./js/landingPage.js"></script>
 </body>
 </html>

@@ -434,10 +434,10 @@ footer {
     border: solid 3px transparent;
     background: linear-gradient(45deg, #f95bf6, #532cf9, #03f7eb) border-box;
     color: #1f0a3d;
-    mask: /*4*/
+    mask:
         linear-gradient(#000 0 0) padding-box, 
         linear-gradient(#000 0 0);
-    mask-composite: exclude; /*5*/
+    mask-composite: exclude;
 }
 
 

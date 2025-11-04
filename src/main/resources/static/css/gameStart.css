@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("/src/main/resources/static/assets/fundo/backgoundCadastro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    color: #0d0020;
+    font-size: 34px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+}
+
+button, a {
+    transition: 0.1s;
+}
+
+button:hover, a:hover {
+    scale: 1.1;
+}
+
+button:active, a:active {
+    scale: 0.95;
+}
+
+/* HEADER */
+
+header a {
+    font-family: "Open Sans", sans-serif;
+    color: #1f0a3d;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 6px 18px;
+    display: flex;
+    gap: 23px;
+    border-radius: 8px;
+    margin-left: 30px;
+}
+
+header a::before {
+    border-radius: 8px;
+}
+
+header a img {
+    width: 10px;
+}
+
+header .logo {
+    font-size: 35px;
+    margin-right: 30px;
+}
+
+/*MAIN*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18px;
+    gap: 14px;
+}
+
+.gameName {
+    font-size: 19px;
+    font-weight: 700;
+    width: fit-content;
+    padding: 10px 44px;
+    border-radius: 11px;
+}
+
+.gameStartCards-container {
+    width: 1080px;
+    height: 440px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gameStartCards-container::before {
+    border-radius: 20px;
+}
+
+.gameStartCards-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    align-items: center;
+    gap: 29px;
+}
+
+.groupNameCards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.groupNameCard {
+    width: 268px;
+    height: 148px;
+    border-radius: 14px;
+    color: #fcffff;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    transition: 0.1s;
+}
+
+.groupNameCard img {
+    width: 45px;
+}
+
+.groupNameCard:hover {
+    scale: 1.06;
+}
+
+.groupNameCard-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 20px;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    color: #0d0020;
+    gap: 5px;
+}
+
+fieldset label {
+    font-size: 13px;
+}
+
+input {
+    height: 26px;
+    border-radius: 7px;
+    padding-left: 7px;
+}
+
+.blue {
+    background: linear-gradient(90deg, #51a2ff, #00d3f3);
+}
+
+.blue input {
+    border: solid 2px #51a2ff;
+}
+
+.pink {
+    background: linear-gradient(90deg, #fb64b6, #ff637e);
+}
+
+.pink input {
+    border: solid 2px #fb64b6;
+}
+
+.groupNameCard-input-container {
+    background-color: #fcffff;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+form button {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 13px 45px;
+    border-radius: 14px;
+}
+
+
+
+.gameStart-robo {
+    position: absolute;
+    z-index: 3;
+    margin-left: 917px;
+    transform: translateY(-119px);
+    scale: 0.9;
+}
+
+
+
+
+/* CLASSES MULTIUSO */
+.fullColorLP {
+    font-family: "Poppins", sans-serif;
+    color: #fcffff;
+    border: none;
+    background: linear-gradient(90deg, #e870c2, #5c6ff4);
+}
+
+.gradientBorderLP {
+    font-family: "Poppins", sans-serif;
+    background-color: #fcffff;
+    position: relative;
+    border: none;
+}
+
+.gradientBorderLP::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: solid 3px transparent;
+    background: linear-gradient(45deg, #f95bf6, #532cf9, #03f7eb) border-box;
+    color: #1f0a3d;
+    mask:
+        linear-gradient(#000 0 0) padding-box, 
+        linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.logo {
+    font-family: "Marhey", sans-serif;
+}
+
+.gradientFont {
+    background-image: linear-gradient(45deg, #f95bf6, #532cf9, #03f7eb);
+    background-clip: text;
+    color: transparent;
+}

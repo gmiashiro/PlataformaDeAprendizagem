@@ -1,4 +1,4 @@
-package Controller;
+package br.com.aep.avante.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,5 +8,10 @@ public class HomeController {
     @GetMapping("/")
     public String home() {
         return "index";
+    }
+
+    @GetMapping("/home")
+    public String homePage(){
+        return "home";
     }
 }

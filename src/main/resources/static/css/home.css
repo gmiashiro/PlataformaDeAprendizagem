@@ -69,17 +69,29 @@ button:active {
     gap: 15px;
 }
 
-.header-button-container button {
+.header-button-container a {
     border-radius: 50%;
     width: 56px;
     height: 56px;
     background-color: #ffeded;
     color: #e870c2;
     font-size: 20px;
+    transition: 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.header-button-container button::before {
+.header-button-container a::before {
     border-radius: 50%;
+}
+
+.header-button-container a:hover {
+    scale: 1.1;
+}
+
+.header-button-container a:active {
+    scale: 0.95;
 }
 
 
@@ -349,14 +361,12 @@ footer {
     mask-composite: exclude; 
 }
 
-
-
-.logo {
-    font-family: "Marhey", sans-serif;
-}
-
 .gradientFont {
     background-image: linear-gradient(45deg, #f95bf6, #532cf9, #03f7eb);
     background-clip: text;
     color: transparent;
+}
+
+.logo {
+    font-family: "Marhey", sans-serif;
 }

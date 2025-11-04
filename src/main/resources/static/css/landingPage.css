@@ -317,40 +317,6 @@ button:active {
 }
 
 
-
-/* .sides {
-    width: 325px;
-    height: 230px;
-    gap: 33px;
-    padding-left: 31px;
-}
-
-.sides span {
-    font-size: 16px;
-}
-
-.sides p {
-    font-size: 12px;
-}
-
-.sides img { 
-    width: 65px;
-}
-
-.sides .slider-card-text {
-    display: flex;
-    flex-direction: column;
-    width: 293px;
-    gap: 10px;
-} */
-
-
-
-
-
-
-
-
 /* MAIN BOX 4 */
 
 .main-box4 {
@@ -391,27 +357,6 @@ footer {
 
 
 
-
-/* 
-    --color-red-400: #ff6467;
-    --color-orange-400: #ff8903;
-    --color-yellow-400: #fdc700;
-    --color-lime-400: #9ae600;
-    --color-green-400: #06df72;
-    --color-emerald-400: #00d492;
-    --color-teal-400: #00d5bd;
-    --color-cyan-400: #00d3f2;
-    --color-blue-400: #51a2ff;
-    --color-indigo-400: #7c86ff;
-    --color-purple-400: #c27aff;
-    --color-pink-400: #fb64b6;
-    --color-rose-400: #ff637e; */
-
-
-
-
-
-
 /* CLASSES MULTIUSO */
 .fullColorLP {
     font-family: "Poppins", sans-serif;
@@ -439,8 +384,6 @@ footer {
         linear-gradient(#000 0 0);
     mask-composite: exclude;
 }
-
-
 
 .logo {
     font-family: "Marhey", sans-serif;

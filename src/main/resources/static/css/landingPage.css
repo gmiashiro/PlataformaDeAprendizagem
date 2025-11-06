@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("/src/main/resources/static/assets/fundo/backgroundLanding.png");
+    background-image: url("../assets/fundo/backgroundLanding.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;

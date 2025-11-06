@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("/src/main/resources/static/assets/fundo/backgroundHome.png");
+    background-image: url("../assets/fundo/backgroundHome.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;

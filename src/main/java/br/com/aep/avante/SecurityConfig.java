@@ -22,7 +22,8 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/", "/login", "/cadastro",
-                                "/index.html", "/login.html", "/cadastro.html").permitAll()
+                                "/index.html", "/login.html", "/cadastro.html",
+                                "/home.html", "/profile.html", "/gameStart.html").permitAll()
                         .requestMatchers("/css/**", "/js/**", "/assets/**").permitAll()
                         .anyRequest().authenticated()
                 )

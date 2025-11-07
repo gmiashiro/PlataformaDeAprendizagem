@@ -1,0 +1,145 @@
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.gameCard {
+    width: 377px;
+    height: 409px;
+    background-color: #fcffff;
+    border-radius: 21px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    transition: 0.1s;
+}
+
+.gameCard:hover {
+    scale: 1.05;
+}
+
+.banner {
+    align-self: center;
+    margin-top: 7px;
+}
+
+.banner img {
+    width: 360px;
+    height: 172px;
+    border-radius: 20px 20px 0 0;
+}
+
+.gameCard-content-container {
+    background-color: #e8f8f8;
+    border-radius: 0px 0px 20px 20px;
+    align-self: center;
+    width: 360px;
+    height: 100%;
+    margin-bottom: 7px;
+}
+
+.gameCard-content {
+    margin: 14px 20px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.gameCard-tags-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gameCard-tag {
+    font-size: 11px;
+    color: #fcffff;
+    padding: 1px 8px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.gincana{
+    background: linear-gradient(90deg, #ff8904, #fdc700);
+}
+
+.poderes {
+    background: linear-gradient(90deg, #ff8903, #ff6467);
+}
+
+.versus {
+    background: linear-gradient(90deg, #51a2ff, #00d3f3);
+}
+
+.detetive {
+    background: linear-gradient(90deg, #fb64b6, #ff637e);
+}
+
+.memoria {
+    background: linear-gradient(90deg, #c27aff, #7c86ff);
+}
+
+.forca {
+    background: linear-gradient(90deg, #05df72, #00d492);
+}
+
+.gameCard-tags-container span {
+    font-size: 9px;
+    justify-self: flex-end;
+}
+
+.gameCard-text h6 {
+    font-size: 15px;
+}
+
+.gameCard-text p {
+    font-size: 11px;
+    color: #1f0a3d;
+}
+
+.gameCard-text span {
+    font-style: italic;
+    font-size: 11px;
+    color: #524664;
+}
+
+.gameCard-info-container {
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #524664;
+    margin-top: 20px;
+}
+
+.gameCard-info-container div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.gameCard-info-container img {
+    width: 14px;
+}
+
+.gameCard-info-container button {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.gameCard-play {
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+
+.gameCard-play:hover {
+    scale: 1.03;
+}
+
+.gameCard-play:active {
+    scale: 0.9;
+}

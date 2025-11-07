@@ -27,74 +27,237 @@ h2 {
     font-size: 27px;
 }
 
-header a {
-    font-family: "Open Sans", sans-serif;
-    color: #1f0a3d;
-    font-size: 15px;
-    text-decoration: none;
-}
-
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
     height: 75px;
-    gap: 1079px;
 }
 
-button {
+button, a {
     transition: 0.1s;
 }
 
-button:hover {
+button:hover, a:hover {
     scale: 1.1;
+    cursor: pointer;
 }
 
-button:active {
+button:active, a:active {
     scale: 0.95;
 }
 
 /* HEADER */
 
-.header-logo {
-    font-size: 35px;
+header a {
+    font-family: "Open Sans", sans-serif;
+    color: #1f0a3d;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 6px 18px;
+    display: flex;
+    gap: 23px;
+    border-radius: 8px;
+    margin-left: 30px;
 }
 
-.header-button-container {
+header a::before {
+    border-radius: 8px;
+}
+
+header a img {
+    width: 10px;
+}
+
+header h2 {
+    font-size: 23px;
+}
+
+.header-leftBox {
     display: flex;
     flex-direction: row;
+    gap: 38px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+
+
+.profile-picture {
+    background-image: url("/src/main/resources/static/assets/icons/profilePage/profilePicture.png");
+    border-radius: 50%;
+    width: 154px;
+    height: 154px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    z-index: 2;
+    align-self: center;
+}
+
+.profile-picture::before {
+    border-radius: 50%;
+}
+
+.user-card {
+    position: absolute;
+    z-index: 0;
+    background-color: #fcffff;
+    width: -webkit-fill-available;
+    margin: 77px 55px 0px 55px;
+    height: 207px;
+    border-radius: 30px;
+    padding-top: 87px;
+
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.user-card-text {
+    justify-items: center;
+}
+
+.user-card-cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 35px;
+}
+
+.infoCard {
+    width: 215px;
+    height: 90px;
+    border-radius: 20px;
+    transition: 0.1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: #fcffff;
+    font-size: 18px;
+}
+
+.infoCard-text {
+    display: flex;
+    justify-items: center;
     gap: 15px;
 }
 
-.header-button-container a {
-    border-radius: 50%;
-    width: 56px;
-    height: 56px;
-    background-color: #ffeded;
-    color: #e870c2;
-    font-size: 20px;
-    transition: 0.1s;
+.infoCard img {
+    height: 28px;
+}
+
+.infoCard:hover {
+    scale: 1.06;
+}
+
+.blue {
+    background: linear-gradient(90deg, #51a2ff, #00d3f3);
+}
+
+.pink {
+    background: linear-gradient(90deg, #fb64b6, #ff637e);
+}
+
+.purple {
+    background: linear-gradient(90deg, #c27aff, #7c86ff);
+}
+
+.green {
+    background: linear-gradient(90deg, #05df72, #00d492);
+}
+
+
+.gameArea-container {
+    margin-top: 270px;
+}
+
+.gameArea-filters-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 54px;
+    margin-bottom: 20px;
+}
+
+.gameArea-filters-row img {
+    height: 13px;
+}
+
+.gameArea-filters-row button {
+    border-radius: 13px;
+    padding: 15px 22px;
+}
+
+.gameArea-filters-container {
+    background-color: #fcffff;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 14px;
+}
+
+.gameArea-filters-container button {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    color: #0d0020;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.gameArea-filters-create button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.buttonFull {
+    color: #fcffff !important;
+}
+
+
+.gameCard-action-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 17px;
+}
+
+.myGames {
+    width: 245px !important; 
+}
+
+.gameCard-action-buttons .gradientBorderLP {
+    padding: 0px 22px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    border-radius: 8px;
 }
 
-.header-button-container a::before {
-    border-radius: 50%;
+.gameCard-action-buttons .gradientBorderLP::before {
+    border-radius: 8px;
 }
 
-.header-button-container a:hover {
-    scale: 1.1;
+.gameCard-action-buttons img {
+    height: 14px;
 }
 
-.header-button-container a:active {
-    scale: 0.95;
-}
 
 footer {
-    height: 270px;
+    height: 45px;
 }
 
 

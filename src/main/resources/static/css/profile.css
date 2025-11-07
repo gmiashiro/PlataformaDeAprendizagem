@@ -87,7 +87,7 @@ main {
 
 
 .profile-picture {
-    background-image: url("/src/main/resources/static/assets/icons/profilePage/profilePicture.png");
+    background-image: url("../assets/icons/profilePage/profilePicture.png");
     border-radius: 50%;
     width: 154px;
     height: 154px;

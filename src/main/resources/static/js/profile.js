@@ -1,3 +1,37 @@
+document.addEventListener("DOMContentLoaded", function() {
+
+    // 1. Chama a API para buscar os dados do usuário logado
+    fetch('/api/usuario/me')
+        .then(response => {
+            if (!response.ok) {
+                // Se não estiver logado, redireciona para o login
+                window.location.href = '/login';
+                throw new Error('Usuário não autenticado');
+            }
+            // 2. Converte a resposta (JSON) para um objeto JavaScript
+            return response.json();
+        })
+        .then(usuario => {
+            // 3. 'usuario' é o nosso DTO: { nome: "..." , email: "..." }
+
+            // Atualiza o nome do perfil (usando o ID do Passo 1)
+            const nomeElement = document.getElementById('profile-nome-usuario');
+            if (nomeElement) {
+                nomeElement.textContent = usuario.nome;
+            }
+
+            // Atualiza o e-mail do perfil (usando o ID do Passo 1)
+            const emailElement = document.getElementById('profile-email-usuario');
+            if (emailElement) {
+                emailElement.textContent = usuario.email;
+            }
+        })
+        .catch(error => {
+            // 4. Trata qualquer erro que possa ocorrer
+            console.error('Erro ao buscar dados do usuário:', error);
+        });
+});
+
 /*
 <button>
     <img src="./assets/icons/gameCard/playBrancoIcon.svg" alt="">

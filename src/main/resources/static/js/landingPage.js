@@ -1,10 +1,10 @@
 const cardsText = [
-    "<div><img src='./assets/icons/mainBox2Cards/equipeIcon.svg'></div><div class='slider-card-text'><span>Estimula o trabalho em equipe</span><p>Misture aprendizado com diversão e competição saudável entre alunos</p></div>", 
-    "<div><img src='./assets/icons/mainBox2Cards/controleIcon.svg'></div><div class='slider-card-text'><span>Jogos divertidos</span><p>Misture aprendizado com diversão e competição saudável entre alunos</p></div>", 
-    "<div><img src='./assets/icons/mainBox2Cards/livroIcon.svg'></div><div class='slider-card-text'><span>Livraria de jogos</span><p>Misture aprendizado com diversão e competição saudável entre alunos</p></div>", 
-    "<div><img src='./assets/icons/mainBox2Cards/gratisIcon.svg'></div><div class='slider-card-text'><span>Gratuito</span><p>Misture aprendizado com diversão e competição saudável entre alunos</p></div>", 
-    "<div><img src='./assets/icons/mainBox2Cards/lapisIcon.svg'></div><div class='slider-card-text'><span>Faça seus próprios jogos</span><p>Misture aprendizado com diversão e competição saudável entre alunos</p></div>", 
-    "<div><img src='./assets/icons/mainBox2Cards/monitorIcon.svg'></div><div class='slider-card-text'><span>Apenas um computador</span><p>Misture aprendizado com diversão e competição saudável entre alunos</p></div>",
+    "<div><img src='./assets/icons/mainBox2Cards/equipeIcon.svg'></div><div class='slider-card-text'><span>Estimula o trabalho em equipe</span><p>Todos os jogos da Avante são em equipe, fomentando ao trabalho em equipe dentre vários cenários diferentes.</p></div>", 
+    "<div><img src='./assets/icons/mainBox2Cards/controleIcon.svg'></div><div class='slider-card-text'><span>Jogos divertidos</span><p>Misture aprendizado com diversão e competição saudável entre alunos.</p></div>", 
+    "<div><img src='./assets/icons/mainBox2Cards/livroIcon.svg'></div><div class='slider-card-text'><span>Livraria de jogos</span><p>Tenha acesso a inumeros jogos criados por outros professores sobre variados tópicos.</p></div>", 
+    "<div><img src='./assets/icons/mainBox2Cards/gratisIcon.svg'></div><div class='slider-card-text'><span>Gratuito</span><p>Nossos serviços são gratuitos! Aproveite essa poderosa ferramenta em sua sala de aula sem gastar nada.</p></div>", 
+    "<div><img src='./assets/icons/mainBox2Cards/lapisIcon.svg'></div><div class='slider-card-text'><span>Faça seus próprios jogos</span><p>Faça jogos do seu jeito, personalizando-os de acordo com a necessidade de sua sala de aula.</p></div>", 
+    "<div><img src='./assets/icons/mainBox2Cards/monitorIcon.svg'></div><div class='slider-card-text'><span>Apenas um computador</span><p>A Avante precisa apenas de um dispositivo para rodar o jogo (e preferencialmente um projetor), sendo extremamente acessível.</p></div>",
 ];
 var cards = [];
     /*

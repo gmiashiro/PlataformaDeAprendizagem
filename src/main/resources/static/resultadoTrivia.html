@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/resultadoTrivia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Resultado - Avante</title>
+</head>
+<body>
+    <header>
+        <div class="header-button-container">
+            <a class="gradientBorderLP" href="./gameStart.html">
+                <img src="./assets/icons/cadastro-login/setaVoltar.svg" alt="Icone de seta voltando">
+                Voltar
+            </a>
+        </div>
+        <div>
+            <span class="gradientFont logo">Avante</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="resultado-container gradientBorderLP">
+            <!-- Título -->
+            <div class="resultado-titulo">
+                <h1>Resultado Final!</h1>
+                <p>Veja como foi o desempenho dos times</p>
+            </div>
+
+            <!-- Placar Final -->
+            <div class="placar-final-container">
+                <div class="time-resultado vermelho">
+                    <div class="time-resultado-header">
+                        <img src="./assets/icons/gameStart/equipeRose.svg" alt="Time Vermelho" class="time-icon">
+                        <span class="time-nome">Time Vermelho</span>
+                    </div>
+                    <div class="time-resultado-pontos" id="pontuacaoVermelhoResultado">0</div>
+                    <span class="time-resultado-label">pontos</span>
+                </div>
+
+                <div class="vs-resultado">VS</div>
+
+                <div class="time-resultado azul">
+                    <div class="time-resultado-header">
+                        <img src="./assets/icons/gameStart/equipeAzul.svg" alt="Time Azul" class="time-icon">
+                        <span class="time-nome">Time Azul</span>
+                    </div>
+                    <div class="time-resultado-pontos" id="pontuacaoAzulResultado">0</div>
+                    <span class="time-resultado-label">pontos</span>
+                </div>
+            </div>
+
+            <!-- Vencedor -->
+            <div class="vencedor-container">
+                <div class="vencedor-badge" id="vencedorBadge">
+                    <span class="vencedor-emoji">🏆</span>
+                    <h2 id="vencedorTexto">Carregando resultado...</h2>
+                </div>
+            </div>
+
+            <!-- Botões de Ação -->
+            <div class="botoes-container">
+                <a href="./gameStart.html" class="fullColorLP btn-novo-jogo">
+                    Novo Jogo
+                </a>
+                <a href="./home.html" class="gradientBorderLP btn-voltar-home">
+                    Voltar ao Menu
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="./js/resultadoTrivia.js"></script>
+</body>
+</html>

@@ -34,17 +34,17 @@
             <div class="gameStart-robo">
                 <img src="./assets/icons/gameStart/roboMegafone.png" alt="Robô segurando um megafone">
             </div>
-            <form action="">
+            <form id="gameStartForm">
                 <div class="groupNameCards-container">
                     <div class="groupNameCard blue">
                         <div class="groupNameCard-title">
                             <img src="./assets/icons/gameStart/equipeAzul.svg" alt="">
-                            <span>Equipe 1</span>
+                            <span>Equipe Azul</span>
                         </div>
                         <div class="groupNameCard-input-container">
                             <fieldset>
-                                <label for="">Nome da equipe</label>
-                                <input type="text" name="" id="">
+                                <label for="nomeEquipeAzul">Nome da equipe</label>
+                                <input type="text" name="nomeEquipeAzul" id="nomeEquipeAzul" placeholder="Digite o nome...">
                             </fieldset>
                         </div>
                     </div>
@@ -52,21 +52,19 @@
                     <div class="groupNameCard pink">
                         <div class="groupNameCard-title">
                             <img src="./assets/icons/gameStart/equipeRose.svg" alt="">
-                            <span>Equipe 1</span>
+                            <span>Equipe Vermelha</span>
                         </div>
                         <div class="groupNameCard-input-container">
                             <fieldset>
-                                <label for="">Nome da equipe</label>
-                                <input type="text" name="" id="">
+                                <label for="nomeEquipeVermelha">Nome da equipe</label>
+                                <input type="text" name="nomeEquipeVermelha" id="nomeEquipeVermelha" placeholder="Digite o nome...">
                             </fieldset>
                         </div>
                     </div>
                 </div>
 
                 <div>
-                    <form action="" id="game-start-form">
-                        <button type="submit" class="fullColorLP">Começar</button>
-                    </form>
+                    <button type="submit" class="fullColorLP">Começar</button>
                 </div>
             </form>
 
@@ -76,5 +74,6 @@
     <footer>
 
     </footer>
+    <script src="./js/gameStart.js"></script>
 </body>
 </html>

@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/src/main/resources/static/assets/fundo/backgoundCadastro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Open Sans", sans-serif;
+    color: #0d0020;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    padding: 0 30px;
+}
+
+header a {
+    font-family: "Open Sans", sans-serif;
+    color: #1f0a3d;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 6px 18px;
+    display: flex;
+    gap: 23px;
+    border-radius: 8px;
+    transition: 0.1s;
+}
+
+header a:hover {
+    scale: 1.1;
+}
+
+header a:active {
+    scale: 0.95;
+}
+
+header a img {
+    width: 10px;
+}
+
+header .logo {
+    font-size: 35px;
+    margin-right: 30px;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 75px);
+    padding: 20px;
+}
+
+.resultado-container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #fcffff;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    border: solid 3px transparent;
+    background-clip: padding-box;
+}
+
+.resultado-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: solid 3px transparent;
+    background: linear-gradient(45deg, #f95bf6, #532cf9, #03f7eb) border-box;
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+/* TÍTULO */
+
+.resultado-titulo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resultado-titulo h1 {
+    background-image: linear-gradient(45deg, #f95bf6, #532cf9, #03f7eb);
+    background-clip: text;
+    color: transparent;
+}
+
+.resultado-titulo p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* PLACAR FINAL */
+
+.placar-final-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    background: linear-gradient(90deg, rgba(251, 100, 182, 0.1), rgba(81, 162, 255, 0.1));
+    border-radius: 15px;
+}
+
+.time-resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    padding: 25px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.time-resultado:hover {
+    transform: translateY(-5px);
+}
+
+.time-resultado.vermelho {
+    background: linear-gradient(135deg, #fb64b6, #ff637e);
+    color: #fcffff;
+}
+
+.time-resultado.azul {
+    background: linear-gradient(135deg, #51a2ff, #00d3f3);
+    color: #fcffff;
+}
+
+.time-resultado-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.time-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.time-nome {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.time-resultado-pontos {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.time-resultado-label {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.vs-resultado {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0d0020;
+    opacity: 0.3;
+}
+
+/* VENCEDOR */
+
+.vencedor-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.vencedor-badge {
+    background: linear-gradient(135deg, #f95bf6, #532cf9, #03f7eb);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: #fcffff;
+    box-shadow: 0 10px 30px rgba(83, 44, 249, 0.3);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.vencedor-emoji {
+    font-size: 60px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.vencedor-badge h2 {
+    color: #fcffff;
+    font-size: 32px;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* BOTÕES */
+
+.botoes-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-novo-jogo,
+.btn-voltar-home {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 14px 40px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-novo-jogo {
+    color: #fcffff;
+    background: linear-gradient(90deg, #e870c2, #5c6ff4);
+}
+
+.btn-novo-jogo:hover {
+    scale: 1.05;
+    box-shadow: 0 8px 20px rgba(232, 112, 194, 0.4);
+}
+
+.btn-novo-jogo:active {
+    scale: 0.95;
+}
+
+.btn-voltar-home {
+    color: #1f0a3d;
+    background-color: #fcffff;
+    border: 2px solid #532cf9;
+}
+
+.btn-voltar-home:hover {
+    scale: 1.05;
+    background: linear-gradient(135deg, rgba(83, 44, 249, 0.1), rgba(3, 247, 235, 0.1));
+}
+
+.btn-voltar-home:active {
+    scale: 0.95;
+}
+
+/* CLASSES MULTIUSO */
+
+.fullColorLP {
+    font-family: "Poppins", sans-serif;
+    color: #fcffff;
+    border: none;
+    background: linear-gradient(90deg, #e870c2, #5c6ff4);
+}
+
+.gradientBorderLP {
+    font-family: "Poppins", sans-serif;
+    background-color: #fcffff;
+    position: relative;
+    border: none;
+}
+
+.gradientBorderLP::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: solid 3px transparent;
+    background: linear-gradient(45deg, #f95bf6, #532cf9, #03f7eb) border-box;
+    color: #1f0a3d;
+    mask:
+        linear-gradient(#000 0 0) padding-box, 
+        linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+    border-radius: 20px;
+}
+
+.logo {
+    font-family: "Marhey", sans-serif;
+}
+
+.gradientFont {
+    background-image: linear-gradient(45deg, #f95bf6, #532cf9, #03f7eb);
+    background-clip: text;
+    color: transparent;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    .resultado-container {
+        padding: 25px;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .placar-final-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .time-resultado {
+        width: 100%;
+    }
+
+    .time-resultado-pontos {
+        font-size: 40px;
+    }
+
+    .vencedor-badge {
+        padding: 30px;
+    }
+
+    .vencedor-emoji {
+        font-size: 50px;
+    }
+
+    .botoes-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-novo-jogo,
+    .btn-voltar-home {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0 15px;
+    }
+
+    .resultado-container {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .placar-final-container {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .time-resultado {
+        padding: 15px;
+    }
+
+    .time-resultado-pontos {
+        font-size: 32px;
+    }
+
+    .vencedor-badge {
+        padding: 20px;
+    }
+
+    .vencedor-emoji {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .btn-novo-jogo,
+    .btn-voltar-home {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+}

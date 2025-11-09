@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/src/main/resources/static/assets/fundo/backgoundCadastro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Open Sans", sans-serif;
+    color: #0d0020;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    padding: 0 30px;
+}
+
+header a {
+    font-family: "Open Sans", sans-serif;
+    color: #1f0a3d;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 6px 18px;
+    display: flex;
+    gap: 23px;
+    border-radius: 8px;
+    transition: 0.1s;
+}
+
+header a:hover {
+    scale: 1.1;
+}
+
+header a:active {
+    scale: 0.95;
+}
+
+header a img {
+    width: 10px;
+}
+
+header .logo {
+    font-size: 35px;
+    margin-right: 30px;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 50px;
+}
+
+/* SEÇÃO DE INTRODUÇÃO */
+
+.introducao-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+}
+
+.introducao-container h1 {
+    background-image: linear-gradient(45deg, #f95bf6, #532cf9, #03f7eb);
+    background-clip: text;
+    color: transparent;
+}
+
+.subtitulo {
+    color: #666;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* GRID DE JOGOS */
+
+.jogos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* CARD DO JOGO */
+
+.jogo-card {
+    background-color: #fcffff;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.jogo-card:not(.desabilitado):hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(83, 44, 249, 0.2);
+    border-color: #532cf9;
+}
+
+.jogo-card.desabilitado {
+    opacity: 0.7;
+}
+
+.jogo-card-header {
+    background: linear-gradient(135deg, rgba(249, 91, 246, 0.1), rgba(83, 44, 249, 0.1));
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    position: relative;
+}
+
+.jogo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f95bf6, #532cf9);
+    padding: 15px;
+}
+
+.jogo-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.badge-em-breve {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(90deg, #ff9800, #ff6b6b);
+    color: #fcffff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.jogo-card-content {
+    padding: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.jogo-card-content h2 {
+    color: #0d0020;
+}
+
+.jogo-card-content p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.jogo-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: linear-gradient(135deg, rgba(83, 44, 249, 0.1), rgba(3, 247, 235, 0.1));
+    color: #532cf9;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.jogo-card-footer {
+    padding: 20px 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 10px;
+}
+
+.btn-jogar {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-jogar.fullColorLP {
+    color: #fcffff;
+    background: linear-gradient(90deg, #e870c2, #5c6ff4);
+}
+
+.btn-jogar.fullColorLP:hover {
+    scale: 1.05;
+    box-shadow: 0 6px 20px rgba(232, 112, 194, 0.3);
+}
+
+.btn-jogar.fullColorLP:active {
+    scale: 0.95;
+}
+
+.btn-jogar.btn-desabilitado {
+    background-color: #e0e0e0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.btn-jogar.btn-desabilitado:hover {
+    scale: 1;
+    box-shadow: none;
+}
+
+/* CLASSES MULTIUSO */
+
+.fullColorLP {
+    font-family: "Poppins", sans-serif;
+    color: #fcffff;
+    border: none;
+    background: linear-gradient(90deg, #e870c2, #5c6ff4);
+}
+
+.gradientBorderLP {
+    font-family: "Poppins", sans-serif;
+    background-color: #fcffff;
+    position: relative;
+    border: none;
+}
+
+.gradientBorderLP::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: solid 3px transparent;
+    background: linear-gradient(45deg, #f95bf6, #532cf9, #03f7eb) border-box;
+    color: #1f0a3d;
+    mask:
+        linear-gradient(#000 0 0) padding-box, 
+        linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+    border-radius: 8px;
+}
+
+.logo {
+    font-family: "Marhey", sans-serif;
+}
+
+.gradientFont {
+    background-image: linear-gradient(45deg, #f95bf6, #532cf9, #03f7eb);
+    background-clip: text;
+    color: transparent;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1024px) {
+    .jogos-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 30px 15px;
+        gap: 40px;
+    }
+
+    .jogos-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .jogo-card-header {
+        padding: 25px;
+        min-height: 130px;
+    }
+
+    .jogo-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .subtitulo {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0 15px;
+    }
+
+    main {
+        padding: 20px 10px;
+        gap: 30px;
+    }
+
+    .jogos-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .jogo-card-header {
+        padding: 20px;
+        min-height: 110px;
+    }
+
+    .jogo-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .jogo-card-content {
+        padding: 20px;
+        gap: 12px;
+    }
+
+    .jogo-card-content p {
+        font-size: 13px;
+    }
+
+    .btn-jogar {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .badge-em-breve {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+}

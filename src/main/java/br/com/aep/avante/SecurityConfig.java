@@ -23,7 +23,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/", "/login", "/cadastro",
                                 "/index.html", "/login.html", "/cadastro.html",
-                                "/home.html", "/profile.html", "/gameStart.html").permitAll()
+                                "/home.html", "/profile.html", "/gameStart.html",
+                                "/colecaoJogos.html", "/trivia.html", "/resultadoTrivia.html").permitAll() // <-- LINHA ATUALIZADA
                         .requestMatchers("/css/**", "/js/**", "/assets/**").permitAll()
                         .anyRequest().authenticated()
                 )
